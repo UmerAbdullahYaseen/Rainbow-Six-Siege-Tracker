@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Stats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stat.css">
+</head>
+
+<body class="text-center">
+    <form class="form-signin" action="/stats" method="POST">
+        <img class="mb-4" src="images/gaming-commentator.png" alt="" width="172" height="172">
+        <h1 class="h3 mb-3 font-weight-normal">All your R6S stats here ✌ </h1>
+        <input type="text" name="uplayId" class="form-control" placeholder="Your in game name" required autofocus>
+        <input type="text" name="platform" class="form-control" placeholder="pc/xbox/ps4" required>
+        <div class="checkbox mb-3">
+        </div>
+        <button class="btn btn-lg btn-success btn-block" type="submit" style="color: #fff;">Search</button>
+        <a href="/">Back</a>
+        <p class="mt-5 mb-3 text-muted ">&copy; Made with ❤ by YAM squad</p>
+    </form>
+</body>
+
+</html>

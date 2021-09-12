@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Landing Page of Rainbow Tracker</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/viewstat.css">
+
+    <body style="background-color: #A9A9A9">
+
+
+
+        <div class="wrapper" style="padding-top: 200px;">
+
+
+            <div class="table">
+
+                <div class="row header">
+                    <div class="cell">
+                        <h4> GENERAL STATS </h4>
+                    </div>
+                    <div class="cell">
+                        <h4>
+                            <%= username %>
+                        </h4>
+                    </div>
+                    <div class="cell">
+
+                    </div>
+                    <div class="cell">
+                        <img src="<%= uplayimg %> " height="70px" width="70px">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        TIME PLAYED :
+                        <%= Math.round(timeplayed/3600) %> HR.
+                    </div>
+                    <div class="cell">
+                        W/L :
+                        <%= (generalwin/generalloss).toFixed(2) %>
+                    </div>
+                    <div class="cell" ">
+                        WINS : <%= generalwin %> 
+                    </div>
+                    <div class="cell " >
+                        LOSSES: <%= generalloss %> 
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="cell " >
+                        MATCHES: <%= generalmatches %> 
+                    </div>
+                    <div class="cell " >
+                        KILLS:  <%= generalkill %> 
+                    </div>
+                    <div class="cell " >
+                        DEATHS: <%= generaldeath %> 
+                    </div>
+                    <div class="cell " >
+                        LASTSEEN: Today
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="cell " >
+                        KD: <%= generalkd %> 
+                    </div>
+                    <div class="cell " >
+                        HEADSHOTS: <%= generalheadshot %>
+                    </div>
+                    <div class="cell " >
+                        ASSISTS: <%= generalassists %>
+                    </div>
+                    <div class="cell " ">
+                        DRAWS:
+                        <%= generaldraw %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table ">
+
+                <div class="row header green ">
+                    <div class="cell ">
+                        <h4>RANKED STATS</h4>
+                    </div>
+                    <div class="cell ">
+
+                    </div>
+                    <div class="cell ">
+
+                    </div>
+                    <div class="cell ">
+
+                    </div>
+                    <div class="cell ">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        RANKED TIME PLAYED :
+                        <%= Math.round(rtimeplayed/3600) %> HR.
+                    </div>
+                    <div class="cell">
+                        RANKED W/L :
+                        <%= rwl %>
+                    </div>
+                    <div class="cell" ">
+                       RANKED WINS : <%= rwin %> 
+                    </div>
+                    <div class="cell " >
+                       RANKED LOSSES: <%= rloss %> 
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="cell " >
+                        RANKED MATCHES: <%= rgameplayed %> 
+                    </div>
+                    <div class="cell " >
+                       RANKED KILLS:  <%= rkill %> 
+                    </div>
+                    <div class="cell " >
+                      RANKED DEATHS: <%= rdeath %> 
+                    </div>
+                    <div class="cell " >
+                        LASTSEEN: Today
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="cell " >
+                       RANKED KD: <%= rkd %> 
+                    </div>
+                    <div class="cell " >
+                        HEADSHOTS: <%= generalheadshot %>
+                    </div>
+                    <div class="cell " >
+                        ASSISTS: <%= generalassists %>
+                    </div>
+                    <div class="cell " ">
+                        RANKED DRAWS:
+                        <%= rdraw %>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        </div>
+
+
+    </body>

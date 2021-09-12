@@ -1,0 +1,44 @@
+<%- include("partials/header") %>
+    <section id="contact" style="padding:0% 15% 0% 15%;">
+        <h2 class="mb-5 font-weight-bold text-center">Contact us</h2>
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <form class="p-5 grey-text" action="/contact" method="POST">
+                    <div class="md-form form-sm"> <i class="fa fa-user prefix"></i>
+                        <label for="form3">Your name</label>
+                        <input type="text" id="form3" class="form-control form-control-sm" name="name" required>
+                    </div>
+                    <div class="md-form form-sm"> <i class="fa fa-envelope prefix"></i>
+                        <label for="form3">Your Email</label>
+                        <input type="text" id="form2" class="form-control form-control-sm" name="email" required>
+                    </div>
+                    <div class="md-form form-sm"> <i class="fa fa-tag prefix"></i>
+                        <label for="form34">Subject</label>
+                        <input type="text" id="form32" class="form-control form-control-sm" name="subject" required>
+                    </div>
+                    <div class="md-form form-sm"> <i class="fa fa-pencil prefix"></i>
+                        <label for="form34">Your Message</label>
+                        <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4" name="message" required></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary" type="submit">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-12 mb-3">
+                        <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>Lahore, Pakistan</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <p><i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon - Fri, 8:00am-5:00pm</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>+ 092 084 233 075 , + 092 064 446 303</p>
+                    </div>
+                </div>
+                <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
+            </div>
+        </div>
+    </section>
+    <%- include("partials/footer") %>
